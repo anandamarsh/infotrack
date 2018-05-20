@@ -9,7 +9,7 @@ const random = (min,max) =>
 // obtain the search results and set the next alarm
 const updateBadge = () => {
   chrome.storage.sync.get(['keyword', 'url'], async ({keyword, url})=>{
-    const res = await fetch(`https://infotrack-server.herokuapp.com?keyword=${keyword}&url=${url}`);
+    const res = await fetch(`https://infotrack-server.herokuapp.com/search?keyword=${keyword}&url=${url}`);
     const resJson = await res.json();
     const noOfRefs = resJson.length;
     chrome.browserAction.setBadgeBackgroundColor({color: noOfRefs <=1 ? "red" : (noOfRefs <=3 ? "orange" : "green")});
