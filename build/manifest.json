@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Keyworder",
+  "description": "This extensions tells how many times did the given url appears in the top 100 Google Search results from your web browser",
+  "version": "0.0.20",
+
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Keyworder"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "permissions": ["alarms", "storage"]
+}
