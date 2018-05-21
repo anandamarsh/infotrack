@@ -3,7 +3,7 @@
 
   "name": "Keyworder",
   "description": "This extensions tells how many times did the given url appears in the top 100 Google Search results from your web browser",
-  "version": "0.0.21",
+  "version": "0.0.24",
 
   "browser_action": {
     "default_popup": "index.html",
